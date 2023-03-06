@@ -1,0 +1,66 @@
+.card {
+    margin: 0.5rem !important;
+    border: 1px solid hsl(0deg 0% 15%);
+    border-radius: .8rem;
+    position: relative;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: .1s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 0px hsl(0deg 0% 10%);
+}
+
+.pokemonImage {
+    width: calc(100% - 4rem - 8px);
+    aspect-ratio: 1/1;
+    background: radial-gradient(hsl(0deg 0% 10%), hsl(0deg 0% 15%));
+    border-radius: .6rem;
+    padding: 2rem;
+    margin: 4px;
+}
+
+.id {
+    font-family: monospace, sans-serif;
+    color: #919191;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin: 0;
+}
+
+.redirect {
+    color: inherit;
+    text-decoration: none;
+}
+
+.redirect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    padding-bottom: .2rem;
+}
+
+.tag {
+    padding: .2rem 1rem;
+    border-radius: .4rem;
+    line-height: .8rem;
+    font-size: .8rem;
+}
+
+/* .pokemoncontainer {
+    overflow: auto;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+    padding: .4rem;
+} */
